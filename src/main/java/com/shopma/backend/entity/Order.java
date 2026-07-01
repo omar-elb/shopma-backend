@@ -25,7 +25,6 @@ public class Order {
     private Double totalAmount;
     private Integer nbArticles;
 
-    // "en_cours" ou "livree"
     private String status;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
